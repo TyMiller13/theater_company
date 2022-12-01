@@ -1,0 +1,18 @@
+body {
+    background-color: aqua;
+}
+
+
+.container {
+    background-color: aliceblue; /*can remove*/
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "theater-name navbar navbar navbar navbar navbar"
+    ". featured-shows featured-shows featured-shows featured-shows ."
+    ". show-list show-list show-list show-list ."
+    ". footer footer footer footer ."
+    ;
+}
