@@ -8,11 +8,59 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 1fr 30vh;
     grid-template-areas:
     "theater-name navbar navbar navbar navbar navbar"
     ". featured-shows featured-shows featured-shows featured-shows ."
     ". show-list show-list show-list show-list ."
     ". footer footer footer footer ."
     ;
+}
+
+.theater-name{
+    grid-area: theater-name;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+/* .navbar > a:hover {
+    background-color: white;
+    color: yellow;
+} */
+
+.featured-shows {
+    grid-area: featured-shows;
+    display: flex
+}
+
+.show-list {
+    grid-area: show-list;
+    display: flex;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
 }
